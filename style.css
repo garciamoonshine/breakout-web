@@ -1,0 +1,8 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#111;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;font-family:'Courier New',monospace;color:#eee}
+#hud{display:flex;gap:24px;padding:8px 0;font-size:13px;letter-spacing:1px;color:#0ff}
+canvas{display:block;border:1px solid #333;background:#0a0a1a}
+#overlay{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:rgba(0,0,0,.8);opacity:0;pointer-events:none;transition:opacity .3s}
+#overlay.show{opacity:1;pointer-events:all}
+#overlay h1{font-size:2.5rem;color:#0ff;letter-spacing:6px;text-shadow:0 0 16px #0ff}
+#overlay p{color:#aaa;font-size:1rem}
